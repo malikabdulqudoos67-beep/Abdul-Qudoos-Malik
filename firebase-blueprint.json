@@ -1,0 +1,56 @@
+{
+  "entities": {
+    "properties": {
+      "title": "Properties",
+      "description": "Luxury real estate property listings",
+      "fields": {
+        "title": { "type": "string", "description": "Property title" },
+        "type": { "type": "string", "description": "Type: house, villa, apartment, penthouse" },
+        "price": { "type": "number", "description": "Price in USD" },
+        "status": { "type": "string", "description": "Status: for_sale, for_rent, pending, sold" },
+        "location": { "type": "string", "description": "City, State or Country" },
+        "address": { "type": "string", "description": "Street address" },
+        "bedrooms": { "type": "number", "description": "Number of bedrooms" },
+        "bathrooms": { "type": "number", "description": "Number of bathrooms" },
+        "sqft": { "type": "number", "description": "Area in square feet" },
+        "imageUrl": { "type": "string", "description": "Main cover image URL" },
+        "gallery": { "type": "array", "description": "List of gallery image URLs" },
+        "description": { "type": "string", "description": "Detailed description" },
+        "amenities": { "type": "array", "description": "List of amenities" },
+        "isFeatured": { "type": "boolean", "description": "Is featured on homepage" },
+        "createdAt": { "type": "string", "description": "Timestamp ISO string" }
+      }
+    },
+    "appointments": {
+      "title": "Appointments",
+      "description": "Property viewing bookings",
+      "fields": {
+        "propertyId": { "type": "string", "description": "Property ID" },
+        "propertyTitle": { "type": "string", "description": "Property Title" },
+        "propertyImage": { "type": "string", "description": "Property image thumbnail" },
+        "userId": { "type": "string", "description": "User ID" },
+        "userName": { "type": "string", "description": "Client full name" },
+        "userEmail": { "type": "string", "description": "Client email" },
+        "userPhone": { "type": "string", "description": "Client phone number" },
+        "date": { "type": "string", "description": "Booking date YYYY-MM-DD" },
+        "time": { "type": "string", "description": "Time slot (e.g. 10:00 AM)" },
+        "viewingType": { "type": "string", "description": "in_person, video_call, vip_tour" },
+        "guests": { "type": "number", "description": "Number of guests" },
+        "notes": { "type": "string", "description": "Special requests" },
+        "status": { "type": "string", "description": "pending, confirmed, cancelled, completed" },
+        "createdAt": { "type": "string", "description": "Timestamp ISO string" }
+      }
+    },
+    "siteContent": {
+      "title": "Site Content",
+      "description": "Configurable homepage and company text",
+      "fields": {
+        "heroTitle": { "type": "string", "description": "Main hero title" },
+        "heroQuote": { "type": "string", "description": "Hero inspirational quote" },
+        "featuredPropertyId": { "type": "string", "description": "Hero highlight property ID" },
+        "companyPhone": { "type": "string", "description": "Contact phone" },
+        "companyEmail": { "type": "string", "description": "Contact email" }
+      }
+    }
+  }
+}
